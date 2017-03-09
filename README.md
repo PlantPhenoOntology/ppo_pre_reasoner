@@ -6,4 +6,7 @@ a reasoner.
 The incoming directory holds incoming turtle or OWL files with instance data that has been annotated using the PPO application ontology
 
 # Outgoing
-The outgoing directory will contain pre-reasoned turtle or OWL files with pre-reasoned instance data.
+The outgoing directory will contain pre-reasoned turtle or OWL instance data.
+
+# Ontology
+Ontology directory contains the ontology to use as the basis for reasoning over the instance data.
