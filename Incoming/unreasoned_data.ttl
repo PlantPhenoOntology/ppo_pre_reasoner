@@ -48,7 +48,7 @@ obo:BFO_0000051 a owl:ObjectProperty .
 <http://biscicol.org/test/?plant3>
       	a obo:PO_0000003;  				 # 'whole plant'
         obo:RO_0000086 <http://biscicol.org/test/?trait4>; # 'has quality' some 'leaf presence' (indicated by trait4)
-	obo:BFO_0000051 obo:PPO_0000209; # 'has part' some 'true leaf' 
+        obo:BFO_0000051 <http://biscicol.org/test/?trait5>;  # 'has part' some 'true leaf' 
 	rdfs:label "plant3 should infer 4000 plant with leaves, 4050 'vas. leaf expansion stage'" .
 
 <http://biscicol.org/test/?trait1>
@@ -67,3 +67,6 @@ obo:BFO_0000051 a owl:ObjectProperty .
 	a obo:PPO_0002004; 			# 'leaf presence'
 	rdfs:label "instance of 'leaf presence' (trait4)" .
 
+<http://biscicol.org/test/?trait5>
+	a obo:PPO_0000209; # 'has part' some 'true leaf' 
+	rdfs:label "instance of some 'true leaf' (trait5)" .
