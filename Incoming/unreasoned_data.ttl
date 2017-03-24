@@ -78,7 +78,7 @@ obo:BFO_0000051 a owl:ObjectProperty .
 <http://biscicol.org/test/?observingprocess1>
 	a obo:PPO_0002000; # 'phenology observing process'
 	#obo:OBI_0000299 <http://biscicol.org/test/?datum1>; # 'has specified output' some 'measurement datum'
-	obo:RO_0000057 <http://biscicol.org/test/?datum1> . # 'has specified input' some 'phenology observing process'
+	obo:RO_0000057 <http://biscicol.org/test/?datum1> ; # 'has specified input' some 'phenology observing process'
 	obo:IAO_0000136 <http://biscicol.org/test/?trait6> . # 'is about' some 'leaf presence'
 
 <http://biscicol.org/test/?datum1>
