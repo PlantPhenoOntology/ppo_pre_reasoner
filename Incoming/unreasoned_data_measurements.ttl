@@ -5,6 +5,9 @@
 @prefix ark:     <http://biscicol.org/id/ark:> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 
+# This set of triples is meeant to test upper and lower counts
+# and assertions of presence or absence of particular traits
+
 # Need to declare predicates as objectProperties 
 obo:RO_0000086 a owl:ObjectProperty .
 obo:RO_0000057 a owl:ObjectProperty .
