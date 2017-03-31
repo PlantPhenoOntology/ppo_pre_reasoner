@@ -5,6 +5,7 @@
 @prefix ark:     <http://biscicol.org/id/ark:> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 
+
 # logical axiom to infer vascular leaf phenological stage:
 #'plant phenological stage'
 # and ('has participant' some 
@@ -71,19 +72,20 @@ obo:BFO_0000051 a owl:ObjectProperty .
 #)
 <http://biscicol.org/test/?plant4>
       	a obo:PO_0000003;  				 # 'whole plant'
-        obo:RO_0000086 <http://biscicol.org/test/?trait6>; # 'has quality' some 'leaf presence'
-	#obo:OBI_0000293 <http://biscicol.org/test/?observingprocess1> . # 'has specified input' some 'phenology observing process'
-	obo:RO_0000057 <http://biscicol.org/test/?observingprocess1> . # 'has specified input' some 'phenology observing process'
+	rdfs:label "plant 4" ;
+        obo:RO_0000086 <http://biscicol.org/test/?trait6> . # 'has quality' some 'leaf presence'
 
 <http://biscicol.org/test/?observingprocess1>
 	a obo:PPO_0002000; # 'phenology observing process'
-	#obo:OBI_0000299 <http://biscicol.org/test/?datum1>; # 'has specified output' some 'measurement datum'
-	obo:RO_0000057 <http://biscicol.org/test/?datum1> ; # 'has specified input' some 'phenology observing process'
-	obo:IAO_0000136 <http://biscicol.org/test/?trait6> . # 'is about' some 'leaf presence'
+	rdfs:label "observing process 1" ;
+	obo:OBI_0000293 <http://biscicol.org/test/?plant4> ; # 'has specified input' 'plant 4'
+	obo:OBI_0000299 <http://biscicol.org/test/?datum1> . # 'has specified output' some 'measurement datum'
 
 <http://biscicol.org/test/?datum1>
 	a obo:IAO_0000109; #'measurement datum'
-	obo:PPO_0001000 1 . #'lower count' = 1
+	rdfs:label "datum 1" ;
+	obo:PPO_0001000 1 ; #'lower count' = 1
+	obo:PPO_0001006 <http://biscicol.org/test/?trait6> . # 'quality measurement of' some 'leaf presence'
 
 <http://biscicol.org/test/?trait1>
 	a obo:PPO_0003002; 			# 'leaves present'
