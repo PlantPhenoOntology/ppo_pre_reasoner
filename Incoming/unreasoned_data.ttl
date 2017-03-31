@@ -107,5 +107,5 @@ obo:BFO_0000051 a owl:ObjectProperty .
 
 <http://biscicol.org/test/?trait6>
 	a obo:PPO_0002004; 			# 'leaf presence'
-	rdfs:label "instance of 'leaf presence' (trait4)" .
+	rdfs:label "instance of 'leaf presence' (trait6)" .
 
