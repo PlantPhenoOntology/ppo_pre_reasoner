@@ -30,15 +30,15 @@ obo:BFO_0000051 a owl:ObjectProperty .
 # trait indicating leaves present 
 <http://biscicol.org/test/?plant1>
       	a obo:PO_0000003;  				 # 'whole plant'
-        obo:RO_0000086 <http://biscicol.org/test/?trait1>; # 'has quality' some 'leaves present'
+        obo:RO_0000086 <http://biscicol.org/test/?trait1>; # 'has quality' some 'leaves present' (indicated by trait1)
 	rdfs:label "plant1 should infer 4000 plant with leaves, 4050 vas. leaf expansion stage" .
 
 # plant2
 # traits indicating senescent leaves present and expanding leaves present 
 <http://biscicol.org/test/?plant2>
       	a obo:PO_0000003;  				 # 'whole plant'
-        obo:RO_0000086 <http://biscicol.org/test/?trait2>; # 'has quality' some 'senescent leaves present' 
-        obo:RO_0000086 <http://biscicol.org/test/?trait3>; # 'has quality' some 'expanding leaves present'
+        obo:RO_0000086 <http://biscicol.org/test/?trait2>; # 'has quality' some 'senescent leaves present' (indicated by trait2)
+        obo:RO_0000086 <http://biscicol.org/test/?trait3>; # 'has quality' some 'expanding leaves present' (indicated by trait3)
 	rdfs:label "plant2 should infer 4000 plant with leaves, 4001 plant with expanding leaves, 4003 plant with sen. leaves, 4050 vas. leaf expansion stage, 4051 plant in vasc. leaf expansion stage, 4053 plant in sen. leaf expansion stage" .
 
 # plant3
@@ -47,43 +47,9 @@ obo:BFO_0000051 a owl:ObjectProperty .
 # for now just saying 'has part' some 'true leaf'
 <http://biscicol.org/test/?plant3>
       	a obo:PO_0000003;  				 # 'whole plant'
-        obo:RO_0000086 <http://biscicol.org/test/?trait4>; # 'has quality' some 'leaf presence'
+        obo:RO_0000086 <http://biscicol.org/test/?trait4>; # 'has quality' some 'leaf presence' (indicated by trait4)
         obo:BFO_0000051 <http://biscicol.org/test/?trait5>;  # 'has part' some 'true leaf' 
 	rdfs:label "plant3 should infer 4000 plant with leaves, 4050 'vas. leaf expansion stage'" .
-
-# plant4
-# use of measurement datum and lower count to infer a plant with leaves/ vas. leaf expansion stage
-# makes use of the following axiom (need to add to ontology by hand for now)
-#'leaf presence' and (
-#  'quality of' some (
-#    'whole plant' and (
-#      has_specified_output some (
-#        'phenology observing process' and (
-#          has_specified_input some ( 
-#            'measurement datum' AND (
-#              'lower count' min 1 xsd:integer 
-#            )
-#	   )  and 'is about' some 'leaf presence'
-#	 )
-#      ) 
-#    )
-#  )
-#)
-<http://biscicol.org/test/?plant4>
-      	a obo:PO_0000003;  				 # 'whole plant'
-        obo:RO_0000086 <http://biscicol.org/test/?trait6>; # 'has quality' some 'leaf presence'
-	#obo:OBI_0000293 <http://biscicol.org/test/?observingprocess1> . # 'has specified input' some 'phenology observing process'
-	obo:RO_0000057 <http://biscicol.org/test/?observingprocess1> . # 'has specified input' some 'phenology observing process'
-
-<http://biscicol.org/test/?observingprocess1>
-	a obo:PPO_0002000; # 'phenology observing process'
-	#obo:OBI_0000299 <http://biscicol.org/test/?datum1>; # 'has specified output' some 'measurement datum'
-	obo:RO_0000057 <http://biscicol.org/test/?datum1> ; # 'has specified input' some 'phenology observing process'
-	obo:IAO_0000136 <http://biscicol.org/test/?trait6> . # 'is about' some 'leaf presence'
-
-<http://biscicol.org/test/?datum1>
-	a obo:IAO_0000109; #'measurement datum'
-	obo:PPO_0001000 1 . #'lower count' = 1
 
 <http://biscicol.org/test/?trait1>
 	a obo:PPO_0003002; 			# 'leaves present'
@@ -99,13 +65,9 @@ obo:BFO_0000051 a owl:ObjectProperty .
 
 <http://biscicol.org/test/?trait4>
 	a obo:PPO_0002004; 			# 'leaf presence'
+	# 'quality of' some 'whole plant'
 	rdfs:label "instance of 'leaf presence' (trait4)" .
 
 <http://biscicol.org/test/?trait5>
 	a obo:PPO_0000209; # 'has part' some 'true leaf' 
 	rdfs:label "instance of some 'true leaf' (trait5)" .
-
-<http://biscicol.org/test/?trait6>
-	a obo:PPO_0002004; 			# 'leaf presence'
-	rdfs:label "instance of 'leaf presence' (trait4)" .
-
