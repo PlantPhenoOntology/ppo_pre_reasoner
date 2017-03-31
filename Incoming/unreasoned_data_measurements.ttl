@@ -13,6 +13,8 @@ obo:RO_0000086 a owl:ObjectProperty .
 obo:RO_0000057 a owl:ObjectProperty .
 obo:BFO_0000051 a owl:ObjectProperty .
 obo:PPO_0001007 a owl:ObjectProperty .
+obo:PPO_0001000 a owl:ObjectProperty .
+obo:PPO_0001001 a owl:ObjectProperty .
 
 # plant4 should be present
 <http://biscicol.org/test/?plant4>
