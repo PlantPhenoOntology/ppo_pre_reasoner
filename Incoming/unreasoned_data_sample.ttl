@@ -1,0 +1,58 @@
+@prefix dwc:     <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ark:     <http://biscicol.org/id/ark:> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+# This set of triples tests output from the FIMS system
+# currently tracking notes in this file of what to change from FIMS
+
+# Need to declare predicates as objectProperties 
+obo:RO_0000080 a owl:ObjectProperty .
+obo:RO_0000086 a owl:ObjectProperty .
+obo:RO_0000057 a owl:ObjectProperty .
+obo:BFO_0000051 a owl:ObjectProperty .
+obo:PPO_0001006 a owl:ObjectProperty .
+obo:BFO_0000066  a owl:ObjectProperty .
+obo:OBI_0000293  a owl:ObjectProperty .
+obo:OBI_0000299  a owl:ObjectProperty .
+
+<http://biscicol.org/test/?plantStructurePresence=82d538d08aea05643f55a40fdefdf081>
+      # Following are the types coming from FIMS, these don't lead to inferences:
+      # for leaf presence i think i would also need to assert 'has part' some true leaf
+      #a       obo:PPO_0002004 , obo:PPO_0002002 ;
+      # adding the following type will work
+      # (leaves present) -- 
+      a obo:PPO_0003002;
+      rdfs:label "Leaves (forbs)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      obo:RO_0000080 <http://biscicol.org/test/?wholePlant=910> .
+
+<http://biscicol.org/test/?location=e510a438fa8eddc7c94b541ece7fa101>
+      a       <http://purl.org/dc/terms/Location> ;
+      dwc:decimalLatitude "34.091167"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      dwc:decimalLongitude
+              "-118.04704299999999"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<http://biscicol.org/test/?measurementDatum=15da49f6aa5427e59417ba9ef7d5ca0c>
+      a       obo:IAO_0000109 ;
+      # add 'quality measurement of' (quality)
+      obo:PPO_0001006 <http://biscicol.org/test/?plantStructurePresence=82d538d08aea05643f55a40fdefdf081>  .
+      #remove this line
+      #obo:IAO_0000136 <http://biscicol.org/test/?plantStructurePresence=82d538d08aea05643f55a40fdefdf081>  .
+
+<http://biscicol.org/test/?wholePlant=910>
+      a       obo:PO_0000003 ;
+      dwc:materialSampleID
+              910 .
+
+<http://biscicol.org/test/?phenologicalObservingProcess=6c881ef79433af23c6e5da703ad9648d>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/test/?location=e510a438fa8eddc7c94b541ece7fa101> ;
+      obo:OBI_0000293 <http://biscicol.org/test/?wholePlant=910> ;
+      obo:OBI_0000299 <http://biscicol.org/test/?measurementDatum=15da49f6aa5427e59417ba9ef7d5ca0c> ;
+      dwc:Event "2009-05-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      dwc:EventID 63560 ;
+      dwc:startDayOfYear 129 .
+
