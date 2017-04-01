@@ -1,0 +1,45 @@
+@prefix dwc:     <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ark:     <http://biscicol.org/id/ark:> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+
+# This set of triples is meeant to test upper and lower counts
+# and assertions of presence or absence of particular traits
+
+# Need to declare predicates as objectProperties 
+obo:RO_0000086 a owl:ObjectProperty .
+obo:RO_0000057 a owl:ObjectProperty .
+obo:BFO_0000051 a owl:ObjectProperty .
+obo:PPO_0001007 a owl:ObjectProperty .
+obo:PPO_0001000 a owl:ObjectProperty .
+obo:PPO_0001001 a owl:ObjectProperty .
+
+# plant4 should be present
+<http://biscicol.org/test/?plant4>
+      	a obo:PO_0000003;  				 # 'whole plant'
+        obo:RO_0000086 <http://biscicol.org/test/?trait6> . # 'has quality' some 'leaf presence'
+
+# plant 5 should be absent 
+<http://biscicol.org/test/?plant5>
+      	a obo:PO_0000003;  				 # 'whole plant'
+        obo:RO_0000086 <http://biscicol.org/test/?trait7> . # 'has quality' some 'leaf presence'
+
+<http://biscicol.org/test/?datum1>
+	a obo:IAO_0000109; #'measurement datum'
+	obo:PPO_0001000 1 . #'lower count' = 1
+
+<http://biscicol.org/test/?datum2>
+	a obo:IAO_0000109; #'measurement datum'
+	obo:PPO_0001001 0 . #'upper count' = 0
+
+<http://biscicol.org/test/?trait6>
+	a obo:PPO_0002004; 			# 'leaf presence'
+	rdfs:label "instance of 'leaf presence' (trait6)"; 
+	obo:PPO_0001007  <http://biscicol.org/test/?datum1> . # 'has quality measurement' some datum1
+
+<http://biscicol.org/test/?trait7>
+	a obo:PPO_0002004; 			# 'leaf presence'
+	rdfs:label "instance of 'leaf presence' (trait7)";
+	obo:PPO_0001007  <http://biscicol.org/test/?datum2> .# 'has quality measurement' some datum2

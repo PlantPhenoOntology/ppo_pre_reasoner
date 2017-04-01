@@ -1,0 +1,62 @@
+@prefix dwc:     <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ark:     <http://biscicol.org/id/ark:> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+# TODO: declare all of these formally from FIMS
+obo:RO_0000080 a owl:ObjectProperty .
+obo:RO_0000086 a owl:ObjectProperty .
+obo:RO_0000057 a owl:ObjectProperty .
+obo:BFO_0000051 a owl:ObjectProperty .
+obo:PPO_0001006 a owl:ObjectProperty .
+obo:BFO_0000066  a owl:ObjectProperty .
+obo:OBI_0000293  a owl:ObjectProperty .
+obo:OBI_0000299  a owl:ObjectProperty .
+obo:BCO_0000085  a owl:ObjectProperty .
+obo:BCO_0000086  a owl:ObjectProperty .
+obo:PPO_0001000  a owl:DatatypeProperty .
+
+<http://biscicol.org/test/?plantStructurePresence=82d538d08aea05643f55a40fdefdf081>
+      a       obo:PPO_0003002 , obo:PPO_0002002 ;
+      rdfs:label "Leaves (forbs)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      obo:RO_0000080 <http://biscicol.org/test/?wholePlant=910> .
+
+<http://biscicol.org/test/?wholePlant=910>
+      a       obo:PO_0000003 ;
+      dwc:materialSampleID
+              910 .
+
+<http://biscicol.org/test/?measurementDatum=90e43960936298765df7d6abc08deed9>
+      a       obo:IAO_0000109 ;
+      #changing datatype from string to xsd:nonNegativeInteger here by hand
+      # also, asserting an upper count of 0 on purpose to try and induce inferring an absent leaf
+            obo:PPO_0001001 "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://biscicol.org/test/?phenologicalObservingProcess=21baf85cf3ea6303afae6908f3cdfc14>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/test/?location=e510a438fa8eddc7c94b541ece7fa101> ;
+      obo:OBI_0000293 <http://biscicol.org/test/?wholePlant=910> ;
+      obo:OBI_0000299 <http://biscicol.org/test/?measurementDatum=90e43960936298765df7d6abc08deed9> ;
+      dwc:Event "2009-06-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
+      dwc:EventID 108364 ;
+      dwc:startDayOfYear 174 .
+
+<http://biscicol.org/test/?location=e510a438fa8eddc7c94b541ece7fa101>
+      a       <http://purl.org/dc/terms/Location> ;
+      dwc:decimalLatitude "34.091167"^^<http://www.w3.org/2001/XMLSchema#float> ;
+      dwc:decimalLongitude
+              "-118.04704299999999"^^<http://www.w3.org/2001/XMLSchema#float> .
+     
+<http://biscicol.org/test/?identificationAssertion=5bda3509cec2621a81a98c8de77d5ea1>
+      a       obo:bco_0000042 ;
+      obo:BCO_0000085 <http://biscicol.org/test/?taxon=69bcfbc0b0045a05ad57d7269b2a133b> ;
+      obo:BCO_0000086 <http://biscicol.org/test/?wholePlant=910> .
+
+<http://biscicol.org/test/?taxon=69bcfbc0b0045a05ad57d7269b2a133b>
+      a       dwc:Taxon ;
+      dwc:scientificName "annuus"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      dwc:vernacularName "common sunflower"^^<http://www.w3.org/2001/XMLSchema#string> .
+
