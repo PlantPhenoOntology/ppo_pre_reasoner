@@ -1,0 +1,307 @@
+@prefix dwc:     <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ark:     <http://biscicol.org/id/ark:> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+<http://biscicol.org/ppo/?wholePlant=6355>
+      a       obo:PO_0000003 ;
+      obo:RO_0000086 <http://biscicol.org/ppo/?plantStructurePresence=ff0370ace4d4f8439393a29ad59a9643> , <http://biscicol.org/ppo/?plantStructurePresence=ed6117d3dd627f01d8d06d7aed9a027a> , <http://biscicol.org/ppo/?plantStructurePresence=c8b9ae6a766c0305d7772fea147f9650> , <http://biscicol.org/ppo/?plantStructurePresence=da8ceeb7251c328efc1955625f9e5d04> , <http://biscicol.org/ppo/?plantStructurePresence=de2277a246270d215553e80f7e9d3f8b> , <http://biscicol.org/ppo/?plantStructurePresence=ad96215bd46c6f20b67e22dd1cf57e94> , <http://biscicol.org/ppo/?plantStructurePresence=6b7bcde1c437d78968e5f8c2b068eef0> , <http://biscicol.org/ppo/?plantStructurePresence=6eee1a16595025e7001bf788a09480b9> , <http://biscicol.org/ppo/?plantStructurePresence=8fb965d4fbd8c69c9816ff6991733dd5> , <http://biscicol.org/ppo/?plantStructurePresence=0f8a3e9b64c3c12bd61326fc706983fb> ;
+      dwc:materialSampleID
+              6355 .
+
+obo:PPO_0001003
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001003 .
+
+obo:IAO_0000109
+      a       rdfs:Class .
+
+<http://biscicol.org/ppo/?plantStructurePresence=ed6117d3dd627f01d8d06d7aed9a027a>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=5c07418230a726649ec3945c796cb7e4> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+<http://biscicol.org/ppo/?measurementDatum=b6bc5a99d53c2966b159a5b4529f09d1>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+obo:PPO_0001007
+      a       owl:ObjectProperty .
+
+<http://biscicol.org/ppo/?plantStructurePresence=da8ceeb7251c328efc1955625f9e5d04>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=b152dd530f8b6f5e125b6d50dd6ab96b> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=b1971ebb4e2c4eb81adaf9aa8b6fda07>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-06-07"^^xsd:date ;
+      dwc:EventID 299621 ;
+      dwc:startDayOfYear 158 .
+
+<http://biscicol.org/ppo/?plantStructurePresence=8fb965d4fbd8c69c9816ff6991733dd5>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=93549e6edb66dee7c490ceedc7068132> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=82cac265bf9fe8407a7a6114ee4856cf>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-05"^^xsd:date ;
+      dwc:EventID 235916 ;
+      dwc:startDayOfYear 125 .
+
+<http://biscicol.org/ppo/?identificationAssertion=ee4e32f8e19ff97f8e579a6ce9272620>
+      a       obo:bco_0000042 ;
+      obo:BCO_0000085 <http://biscicol.org/ppo/?taxon=69bcfbc0b0045a05ad57d7269b2a133b> ;
+      obo:BCO_0000086 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+rdfs:comment
+      a       rdf:Property .
+
+dwc:materialSampleID
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:materialSampleID .
+
+dwc:Taxon
+      a       rdfs:Class .
+
+<http://biscicol.org/ppo/?plantStructurePresence=ad96215bd46c6f20b67e22dd1cf57e94>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=6e71697e2a03b053ddff50382db5b82c> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+dwc:EventID
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:EventID .
+
+dwc:decimalLongitude
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:decimalLongitude .
+
+<http://biscicol.org/ppo/?plantStructurePresence=ff0370ace4d4f8439393a29ad59a9643>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=fbbd53fff45ceb532d9946077b8ae388> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+rdf:type
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy rdf:type .
+
+<http://biscicol.org/ppo/?measurementDatum=b4901f8166ba203a1c61e6ea1f7c9d5a>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+dwc:startDayOfYear
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:startDayOfYear .
+
+<http://biscicol.org/ppo/?measurementDatum=93549e6edb66dee7c490ceedc7068132>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+<http://purl.org/dc/terms/Location>
+      a       rdfs:Class .
+
+obo:RO_0000080
+      a       owl:ObjectProperty .
+
+obo:PPO_0002000
+      a       rdfs:Class .
+
+<http://biscicol.org/ppo/?plantStructurePresence=de2277a246270d215553e80f7e9d3f8b>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=b6bc5a99d53c2966b159a5b4529f09d1> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+dwc:vernacularName
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:vernacularName .
+
+dwc:decimalLatitude
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:decimalLatitude .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=f649fe69b0f7e9dac8da551979c634e8>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-16"^^xsd:date ;
+      dwc:EventID 245281 ;
+      dwc:startDayOfYear 136 .
+
+obo:PPO_0001000
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001000 .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=3026d0fe7ff9968983865759af5c4799>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-20"^^xsd:date ;
+      dwc:EventID 249893 ;
+      dwc:startDayOfYear 140 .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=dd929de8651f06f32013684f94ae7c00>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-25"^^xsd:date ;
+      dwc:EventID 253098 ;
+      dwc:startDayOfYear 145 .
+
+<http://biscicol.org/ppo/?measurementDatum=5c07418230a726649ec3945c796cb7e4>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+obo:PO_0000003
+      a       rdfs:Class .
+
+<http://biscicol.org/ppo/?taxon=69bcfbc0b0045a05ad57d7269b2a133b>
+      a       dwc:Taxon ;
+      dwc:scientificName "annuus"^^xsd:string ;
+      dwc:vernacularName "common sunflower"^^xsd:string .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=d83df6a150b0ec09c8fbceb08dd32a5d>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-30"^^xsd:date ;
+      dwc:EventID 294699 ;
+      dwc:startDayOfYear 150 .
+
+<http://biscicol.org/ppo/?plantStructurePresence=6eee1a16595025e7001bf788a09480b9>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=b4901f8166ba203a1c61e6ea1f7c9d5a> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+<http://biscicol.org/ppo/?measurementDatum=b152dd530f8b6f5e125b6d50dd6ab96b>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+<http://biscicol.org/ppo/?measurementDatum=6e71697e2a03b053ddff50382db5b82c>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+<http://biscicol.org/ppo/?measurementDatum=fbbd53fff45ceb532d9946077b8ae388>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+dwc:scientificName
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:scientificName .
+
+dwc:Event
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:Event .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=3fb5ec6671720b9ce2fbd18820513b45>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-28"^^xsd:date ;
+      dwc:EventID 254032 ;
+      dwc:startDayOfYear 148 .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=b61a5bd8a3f9b4365b85677b59ae4063>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-07"^^xsd:date ;
+      dwc:EventID 235921 ;
+      dwc:startDayOfYear 127 .
+
+obo:PPO_0001001
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001001 .
+
+<http://biscicol.org/ppo/?measurementDatum=ededd1be7f1dff1ec3d7b1983fa2b48f>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+<http://biscicol.org/ppo/?plantStructurePresence=0f8a3e9b64c3c12bd61326fc706983fb>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=7177c9878a84be74db69c55d3a7d0350> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+obo:BCO_0000086
+      a       owl:ObjectProperty .
+
+obo:RO_0000086
+      a       owl:ObjectProperty .
+
+obo:PPO_0001002
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001002 .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=9103483af7bc619c036f54c9e552e850>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-06-01"^^xsd:date ;
+      dwc:EventID 296012 ;
+      dwc:startDayOfYear 152 .
+
+<http://biscicol.org/ppo/?measurementDatum=7177c9878a84be74db69c55d3a7d0350>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+obo:PPO_0002002
+      a       rdfs:Class .
+
+<http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9>
+      a       <http://purl.org/dc/terms/Location> ;
+      dwc:decimalLatitude "43.040955"^^xsd:float ;
+      dwc:decimalLongitude
+              "-76.212914"^^xsd:float .
+
+obo:BFO_0000066
+      a       owl:ObjectProperty .
+
+<http://biscicol.org/ppo/?plantStructurePresence=c8b9ae6a766c0305d7772fea147f9650>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=8e34fa8920ae653dc1ef36ad469ca743> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+obo:bco_0000042
+      a       rdfs:Class .
+
+obo:BCO_0000085
+      a       owl:ObjectProperty .
+
+obo:OBI_0000293
+      a       owl:ObjectProperty .
+
+<http://biscicol.org/ppo/?plantStructurePresence=6b7bcde1c437d78968e5f8c2b068eef0>
+      a       obo:PPO_0002007 , obo:PPO_0002002 ;
+      rdfs:comment "All leaves withered (herbaceous and grasses)"^^xsd:string ;
+      obo:PPO_0001007 <http://biscicol.org/ppo/?measurementDatum=ededd1be7f1dff1ec3d7b1983fa2b48f> ;
+      obo:RO_0000080 <http://biscicol.org/ppo/?wholePlant=6355> .
+
+<http://biscicol.org/ppo/?phenologicalObservingProcess=530c1e54da3ab93ff1c82780faed65da>
+      a       obo:PPO_0002000 ;
+      obo:BFO_0000066 <http://biscicol.org/ppo/?location=3ec8bbb55d619e4a0d2d485b963dbcf9> ;
+      obo:OBI_0000293 <http://biscicol.org/ppo/?wholePlant=6355> ;
+      dwc:Event "2010-05-13"^^xsd:date ;
+      dwc:EventID 244034 ;
+      dwc:startDayOfYear 133 .
+
+<http://biscicol.org/ppo/?measurementDatum=8e34fa8920ae653dc1ef36ad469ca743>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
