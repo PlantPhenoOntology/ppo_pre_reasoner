@@ -5,7 +5,7 @@
 @prefix ark:     <http://biscicol.org/id/ark:> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 
-# This set of triples is meeant to test upper and lower counts
+# This set of triples is meant to test upper and lower counts
 # and assertions of presence or absence of particular traits
 
 # Need to declare predicates as objectProperties 
@@ -13,8 +13,9 @@ obo:RO_0000086 a owl:ObjectProperty .
 obo:RO_0000057 a owl:ObjectProperty .
 obo:BFO_0000051 a owl:ObjectProperty .
 obo:PPO_0001007 a owl:ObjectProperty .
-obo:PPO_0001000 a owl:ObjectProperty .
-obo:PPO_0001001 a owl:ObjectProperty .
+# Except for the next two, which are data properties!
+obo:PPO_0001000 a owl:DatatypeProperty .
+obo:PPO_0001001 a owl:DatatypeProperty .
 
 # plant4 should be present
 <http://biscicol.org/test/?plant4>
