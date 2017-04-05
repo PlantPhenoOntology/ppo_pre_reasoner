@@ -12,6 +12,7 @@
 obo:RO_0000086 a owl:ObjectProperty .
 obo:RO_0000057 a owl:ObjectProperty .
 obo:BFO_0000051 a owl:ObjectProperty .
+obo:PPO_0001006 a owl:ObjectProperty .
 obo:PPO_0001007 a owl:ObjectProperty .
 # Except for the next two, which are data properties!
 obo:PPO_0001000 a owl:DatatypeProperty .
@@ -29,7 +30,8 @@ obo:PPO_0001001 a owl:DatatypeProperty .
 
 <http://biscicol.org/test/?datum1>
 	a obo:IAO_0000109; #'measurement datum'
-	obo:PPO_0001000 1 . #'lower count' = 1
+	obo:PPO_0001000 1 ; #'lower count' = 1
+	obo:PPO_0001006  <http://biscicol.org/test/?trait6> . # 'quality measurement of' trait6
 
 <http://biscicol.org/test/?datum2>
 	a obo:IAO_0000109; #'measurement datum'
@@ -37,8 +39,7 @@ obo:PPO_0001001 a owl:DatatypeProperty .
 
 <http://biscicol.org/test/?trait6>
 	a obo:PPO_0002004; 			# 'leaf presence'
-	rdfs:label "instance of 'leaf presence' (trait6)"; 
-	obo:PPO_0001007  <http://biscicol.org/test/?datum1> . # 'has quality measurement' some datum1
+	rdfs:label "instance of 'leaf presence' (trait6)" .
 
 <http://biscicol.org/test/?trait7>
 	a obo:PPO_0002004; 			# 'leaf presence'
