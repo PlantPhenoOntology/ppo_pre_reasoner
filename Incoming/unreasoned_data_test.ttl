@@ -1,0 +1,166 @@
+@prefix dwc:     <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ark:     <http://biscicol.org/id/ark:> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix ppo:     <http://www.plantphenology.org/id/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+obo:PPO_0001003
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001003 .
+
+obo:IAO_0000109
+      a       rdfs:Class .
+
+obo:PPO_0001007
+      a       owl:ObjectProperty .
+
+obo:PO_0000003
+      a       rdfs:Class .
+
+<ppo:?measurementDatum=2>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001001 0 .
+
+dc:creator
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dc:creator .
+
+<ppo:?plantStructurePresence=1>
+      a       obo:PPO_0002017 , obo:PPO_0002002 ;
+      rdfs:comment "Ripe fruits"^^xsd:string ;
+      obo:PPO_0001007 <ppo:?measurementDatum=1> ;
+      obo:RO_0000080 <ppo:?wholePlant=12932> .
+
+<ppo:?wholePlant=12932>
+      a       obo:PO_0000003 ;
+      obo:OBI_0000295 <ppo:?phenologicalObservingProcess=1> ;
+      dwc:genus "Helianthus"^^xsd:string ;
+      dwc:materialSampleID
+              12932 ;
+      dwc:scientificName "Helianthus annuus"^^xsd:string ;
+      dwc:specificEpithet "annuus"^^xsd:string ;
+      dwc:vernacularName "common sunflower"^^xsd:string .
+
+rdfs:comment
+      a       rdf:Property .
+
+<ppo:?phenologicalObservingProcess=1>
+      a       obo:PPO_0002000 ;
+      obo:OBI_0000299 <ppo:?measurementDatum=1> ;
+      dc:creator "NPN"^^xsd:string ;
+      dwc:EventID 1 ;
+      dwc:decimalLatitude "34.091167"^^xsd:float ;
+      dwc:decimalLongitude
+              "-118.04704299999999"^^xsd:float ;
+      dwc:startDayOfYear 203 ;
+      dwc:year 2011 .
+
+dwc:materialSampleID
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:materialSampleID .
+
+dwc:year
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:year .
+
+dwc:scientificName
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:scientificName .
+
+dwc:EventID
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:EventID .
+
+obo:PPO_0001001
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001001 .
+
+<urn:ppoOntologyInstance>
+      owl:imports <https://github.com/PlantPhenoOntology/PPO/raw/master/ontology/ppo-reasoned.owl> .
+
+dwc:decimalLongitude
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:decimalLongitude .
+
+obo:PPO_0001002
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001002 .
+
+rdf:type
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy rdf:type .
+
+dwc:specificEpithet
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:specificEpithet .
+
+<ppo:?measurementDatum=1>
+      a       obo:IAO_0000109 ;
+      obo:PPO_0001000 3 ;
+      obo:PPO_0001001 10 .
+
+dwc:startDayOfYear
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:startDayOfYear .
+
+obo:PPO_0002002
+      a       rdfs:Class .
+
+obo:PPO_0002000
+      a       rdfs:Class .
+
+obo:RO_0000080
+      a       owl:ObjectProperty .
+
+<ppo:?plantStructurePresence=2>
+      a       obo:PPO_0002017 , obo:PPO_0002002 ;
+      rdfs:comment "Ripe fruits"^^xsd:string ;
+      obo:PPO_0001007 <ppo:?measurementDatum=2> ;
+      obo:RO_0000080 <ppo:?wholePlant=12933> .
+
+obo:OBI_0000299
+      a       owl:ObjectProperty .
+
+<ppo:?wholePlant=12933>
+      a       obo:PO_0000003 ;
+      obo:OBI_0000295 <ppo:?phenologicalObservingProcess=2> ;
+      dwc:genus "Helianthus"^^xsd:string ;
+      dwc:materialSampleID
+              12933 ;
+      dwc:scientificName "Helianthus annuus"^^xsd:string ;
+      dwc:specificEpithet "annuus"^^xsd:string ;
+      dwc:vernacularName "common sunflower"^^xsd:string .
+
+<ppo:?phenologicalObservingProcess=2>
+      a       obo:PPO_0002000 ;
+      obo:OBI_0000299 <ppo:?measurementDatum=2> ;
+      dc:creator "NPN"^^xsd:string ;
+      dwc:EventID 2 ;
+      dwc:decimalLatitude "34.091167"^^xsd:float ;
+      dwc:decimalLongitude
+              "-118.04704299999999"^^xsd:float ;
+      dwc:startDayOfYear 203 ;
+      dwc:year 2011 .
+
+dwc:vernacularName
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:vernacularName .
+
+dwc:genus
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:genus .
+
+dwc:decimalLatitude
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy dwc:decimalLatitude .
+
+obo:OBI_0000295
+      a       owl:ObjectProperty .
+
+obo:PPO_0001000
+      a       owl:DatatypeProperty , rdf:Property ;
+      rdfs:isDefinedBy obo:PPO_0001000 .
